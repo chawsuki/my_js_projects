@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: black;
+    font-family: 'Rajdhani', sans-serif;  
+    
+    margin: 0;
+    overflow: hidden;
+}
+
+.jisoo{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 50px;
+    left: 25px;
+
+}
+
+.info{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+}
+
+
+.container{
+    background-color: gray;
+
+    position: absolute;
+    left: 180px;
+    top: 50px;
+    bottom: 50px;
+
+    border-radius: 0px 50px 0px 50px;
+
+    /* padding: 20 20 50 50; */
+    height: 550px;
+    width: 1000px;
+}
+
+#text{
+    width: 370px;
+    height: 90px;
+    font-weight: bolder;
+}
+/* Speed Bar  */
+input[type="range"]{
+    background: black;
+    background-color: black;
+    border-bottom: black;
+}
+.speed{
+    /* color: #000;
+    font-style: 18px;
+    
+    padding: 10px 10px; */
+
+    width: 100%;
+    height: 1.2em;
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid black;
+    overflow: hidden;
+}
+.counter-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    text-align: center;
+
+}
+
+.count{
+    display: flex;
+}
+
+.counter{
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+/* Search Bar  */
+.search{
+    height: 40px;
+
+    position: relative;
+}
+
+.search .input{
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    border: 1px black dotted;
+    border-radius: 5px;
+    font-size: 16px;
+
+    margin: 0 290px;
+
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.search .input::placeholder{
+    color: black;
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    font-size: 24px;
+    border: 0;
+    cursor: pointer;
+
+    /* Move above text box */
+    position: absolute;
+    top: 0px;
+    left: 290px;
+
+    /* Move to the right side  */
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: black; /* Green */
+    color: gray;
+    border-radius: 5px;
+  }
+
+.input:focus,.btn:focus{
+    outline: 0;
+}
+
+.search.active .input{
+    width: 150px;
+    transform: translate(-150px);
+}
+/* 
+.search.active .btn{
+    transform :translate(-150px);
+} */
+
+/* 
+.insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+
+.twit{
+    background: #2294DD;
+    -webkit-background-clip: text;
+   
+    background-clip: text;
+-webkit-text-fill-color: transparent;
+}  */
+
+
+@media (max-width:500px) {
+    body{
+        flex-direction: column;
+    }
+}
