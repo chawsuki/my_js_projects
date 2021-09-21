@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hw2</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div class="title">
+                <h2>Pick Your Plan</h2>
+                <div class="toggle-container">
+                    <p>Monthly</p>
+                    <input type="checkbox" name="toggle" id="toggle" class="toggle">
+                    <label for="toggle" id="slider" class="label" ><div class="ball"></div></label>
+                    <p>Yearly</p>
+                </div>
+            </div>
+
+            <!-- Pricing Container  -->
+            <div class="price-container">
+                
+                <div class="price-box">
+                    <div class="box box1">
+                        <h4><span>$</span><span class="standard">99</span></h4>
+                        <p>Standard</p>
+                    </div>
+
+                    <div class="price-list">
+                        <ul>
+                            <li>1 person</li>
+                            <li>1 theme included</li>
+                            <li>20% discount</li>
+                        </ul>
+                        <button id="button" class="btn">Purchase</button>
+                    </div>
+                </div>
+
+                <div class="price-box">
+                    <div class="box box2">
+                        <h4><span>$</span><span class="extended">199</span></h4>
+                        <p>Extented</p>
+                    </div>
+
+                    <div class="price-list">
+                        <ul>
+                            <li>5 person</li>
+                            <li>10 themes included</li>
+                            <li>50% discount</li>
+                        </ul>
+                        <button id="button" class="btn">Purchase</button>
+                    </div>
+                </div>
+
+                <div class="price-box">
+                    <div class="box box3">
+                        <h4><span>$</span><span class="premium">599</span></h4>
+                        <p>Premium</p>
+                    </div>
+
+                    <div class="price-list">
+                        <ul>
+                            <li>100 person</li>
+                            <li>Unlimited themes</li>
+                            <li>Access all new themes</li>
+                        </ul>
+                        <button id="button" class="btn">Purchase</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div id="toasts">           
+        </div>
+
+        <!-- Nav bar in and out  -->
+        <button class="nav-btn open-btn">
+            <i class="fas fa-list"></i>
+        </button>
+
+        <div class="nav nav-gold">
+            <div class="nav nav-progold">
+                <div class="nav nav-black">
+                    <button class="nav-btn close-btn"><i class="fas fa-times"></i></button>
+                    <h1>Lorem Ipsum</h1>
+                    <ul class="list">
+                        <li ><i class="far fa-heart"></i><a href="#">Products</a></li>
+                        <li><i class="far fa-heart"></i><a href="#">Solutions</a></li>
+                        <li><i class="far fa-heart"></i><a href="#">Packages</a></li>
+                        <li><i class="far fa-heart"></i><a href="#">Contact</a></li>
+                        <li><i class="far fa-heart"></i><a href="#">Visit Us</a></li>
+                    </ul>
+
+                    <div class="footer">
+                        <p class="text">
+                            Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato iquando un anonimo e della stampa. 
+                        </p>
+                        
+                        <div class="icon">
+                            <i class="fab fa-facebook fa-2x"></i>
+                            <i class="fab fa-facebook-messenger fa-2x"></i>
+                            <i class="fab fa-instagram fa-2x"></i>
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <script src="js/app.js" type="text/javascript"></script>
+    </body>
+</html>
