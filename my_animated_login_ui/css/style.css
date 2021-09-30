@@ -1,0 +1,290 @@
+:root{
+    --pink: pink;
+    --plum: plum;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #fcfcfc;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    width: 65rem;
+    padding: 10px;
+}
+
+.main-container{
+    width: 100%;
+    height: 38rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container{
+    width: 50%;
+    height: 100%;
+    background-color: pink;
+    padding: 4rem 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: myanidown 0.6s ease;
+
+}
+
+img{
+    width: 100%;
+}
+
+.form-container{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+
+    background-color:plum;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    animation: myaniup 0.6s ease-in-out;
+
+    position: relative;
+}
+
+.form-control{
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid pink;
+    padding: 15px;
+    margin: 10px 0;
+
+    /* position: relative; */
+
+}
+
+.form-group{
+    position: relative;
+}
+
+#name,#email,#password,#emaillogin,#passwordlogin,#emailreset{
+    position: absolute;
+    display: flex;
+    top: 1.3rem;
+    right: 1rem;
+
+}
+
+.form-checkbox{
+    display: flex;
+    /* position: absolute; */
+}
+
+
+.login-top{
+    display: flex;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.btn{
+    width: 50%;
+    background-color: transparent;
+    color: #000;
+    border-radius: 25px;
+    font-size: 15px;
+    border: 1px solid #000;
+    padding: 10px 0;
+    margin: 15px 0;
+    cursor: pointer;
+
+}
+.btn:hover{
+    transform: scale(0.98);
+    background-color: pink;
+}
+.btn:focus{
+    outline: 0;
+}
+.singin{
+    align-content: center;
+    background-color: pink;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px 10px;
+    border-radius: 25px;
+    width: 100%;
+}
+.singin .fab{
+    top: 0;
+    left: 10px;
+}
+.singin:hover{
+    transform: scale(1.09);
+}
+
+.form-control:focus{
+    outline: 0;
+    border-bottom-color: #000;
+}
+form a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+form span{
+    display: flex;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+
+.close,.left-arrow{
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.register,.forgot,.create,.login,.success{
+    display: none;
+}
+
+.success{
+    width: 500px;
+    height: 200px;
+    background-color: plum;
+    color: #000;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+@keyframes myanidown {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes myaniup {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }   
+}
+
+@media (max-width:600px) {
+    .img-container{
+        display: none;
+    }
+
+    .form-container{
+        width: 100%;
+    }
+}
+
+.btn-icon{
+    width: 5rem ;
+    height: 5rem;
+    background-color: pink;
+    color: #000;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+
+    transition: all 0.4s;
+}
+
+.btns.show .btn-icon:nth-of-type(1){
+    background-color: var(--pink);
+    left: 7.3rem;
+}
+
+.btns.show .btn-icon:nth-of-type(2){
+    background-color: var(--pink);
+    left: 13.3rem;
+}
+
+.btns.show .btn-icon:nth-of-type(3){
+    background-color: var(--pink);
+    left: 19.3rem;
+}
+
+.btns.show .btn-icon:nth-of-type(4){
+    background-color: var(--pink);
+    left: 25.3rem;
+}
+
+.btns.show .btn-icon{
+    left: 3.6rem;
+}
+
+.btns.show .btn-icon:hover{
+    color: var(--plum);
+    transform: scale(1.02);
+}
+
+.btns + .btn-icon i{
+    animation: myani 2s infinite ;
+
+}
+
+.btns.show + .btn-icon i {
+    animation: myani 2s linear reverse infinite;
+}
+
+@keyframes myani {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
